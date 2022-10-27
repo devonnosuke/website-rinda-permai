@@ -318,7 +318,7 @@ a:hover {
 
 /*------/ Title /------*/
 .title-wrap {
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
 .title-a {
@@ -482,7 +482,7 @@ a:hover {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  right: 20px;
   bottom: 15px;
   z-index: 996;
   background: #b99052;
