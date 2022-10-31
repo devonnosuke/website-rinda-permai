@@ -12,6 +12,9 @@ body {
   font-family: "EB Garamond", serif;
   color: #555555;
 }
+.list-inline{
+  font-size: 1.7rem;
+}
 
 .fasilitas-img{
   width: 100%;
