@@ -278,7 +278,7 @@ a:hover {
   display: table-cell;
   vertical-align: top;
   font-size: 36px;
-  color: #000000;
+  color: #af751e;
   width: 50px;
   padding-top: 8px;
 }
@@ -1375,6 +1375,10 @@ a:hover {
   border-radius: 50px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+}
+.call-now{
+  font-weight: 600;
+  background-color: #b99052;
 }
 
 .card-footer-a {
