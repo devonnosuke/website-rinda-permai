@@ -212,4 +212,9 @@
   lightGallery(document.getElementById("lightgallery"), {
     download: false,
   });
+
+  lightGallery(document.getElementById("property-single-slider"), {
+    download: false,
+    selector: ".carousel-item-b",
+  });
 })();
