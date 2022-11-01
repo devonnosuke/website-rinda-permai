@@ -217,4 +217,9 @@
     download: false,
     selector: ".carousel-item-b",
   });
+
+  lightGallery(document.getElementById("services"), {
+    download: false,
+    selector: ".link-c",
+  });
 })();
