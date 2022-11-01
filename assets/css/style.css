@@ -12,6 +12,19 @@ body {
   font-family: "EB Garamond", serif;
   color: #555555;
 }
+
+/* .img-denah-dalam {
+  margin: 0 auto;
+  margin-top: -1rem;
+  margin-bottom: 2.5rem;
+} */
+
+.img-denah-dalam {
+  margin: 0 auto;
+  margin-top: -1rem;
+  margin-bottom: 2.5rem;
+}
+
 .list-inline {
   font-size: 1.7rem;
 }
@@ -26,6 +39,14 @@ body {
 @media (min-width: 600px) {
   .fasilitas-img {
     padding: 0px 190px;
+  }
+
+  .img-denah-dalam {
+    margin: 0 auto;
+    margin-top: -2.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: 2rem;
+    height: 85%;
   }
 }
 
