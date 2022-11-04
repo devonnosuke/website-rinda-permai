@@ -213,6 +213,8 @@
     download: false,
   });
 
+  lightGallery(document.getElementById("maplokasi"), {});
+
   lightGallery(document.getElementById("property-single-slider"), {
     download: false,
     selector: ".carousel-item-b",
@@ -222,4 +224,84 @@
     download: false,
     selector: ".link-c",
   });
+
+  let waktuSekarang = new Date().getTime() + 604801111;
+  // console.log("waktu UNIX: ", waktuSekarang);
+
+  let waktuCookie = new Date();
+  waktuCookie.setTime(waktuCookie.getTime() + 604801111);
+  // console.log("waktu Cookie: ", waktuCookie.toUTCString());
+
+  function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
+  document.cookie = "username=John Doe";
+
+  // console.log(getCookie("username"));
+  let cek = getCookie("waktutest");
+  if (cek != "") {
+    // alert("Cookie udah dibuat: " + cek);
+    // document.cookie =
+    //   "waktutest=" +
+    //   waktuSekarang +
+    //   "; expires=" +
+    //   waktuCookie.toUTCString() +
+    //   "; path=/";
+  } else {
+    // setCookie("cek", cek, 365);
+    // alert("Cookie belum dibuat: " + cek);
+    document.cookie =
+      "waktutest=" +
+      waktuSekarang +
+      "; expires=" +
+      waktuCookie.toUTCString() +
+      "; path=/";
+  }
+
+  // Update the count down every 1 second
+  var x = setInterval(function () {
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = cek - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in the element with id="demo"
+    document.getElementById("countDown").innerHTML =
+      days +
+      " Hari " +
+      hours +
+      " Jam " +
+      minutes +
+      " Menit " +
+      seconds +
+      " Detik";
+
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countDown").innerHTML = "EXPIRED";
+    }
+  }, 1000);
 })();
