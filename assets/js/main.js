@@ -213,7 +213,8 @@
     download: false,
   });
 
-  lightGallery(document.getElementById("maplokasi"), {});
+  lightGallery(document.getElementById("maplokasi"));
+  lightGallery(document.getElementById("anim"));
 
   lightGallery(document.getElementById("property-single-slider"), {
     download: false,
@@ -289,6 +290,7 @@
 
     // Display the result in the element with id="demo"
     document.getElementById("countDown").innerHTML =
+      "Waktu Tersisa: " +
       days +
       " Hari " +
       hours +
@@ -300,8 +302,12 @@
 
     // If the count down is finished, write some text
     if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("countDown").innerHTML = "EXPIRED";
+      document.cookie =
+        "waktutest=" +
+        waktuSekarang +
+        "; expires=" +
+        waktuCookie.toUTCString() +
+        "; path=/";
     }
   }, 1000);
 })();
