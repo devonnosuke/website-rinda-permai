@@ -2263,3 +2263,12 @@ footer .copyright-footer {
 footer .credits {
   font-size: 14px;
 }
+
+#countDown {
+  background-color: #a05a2c;
+  border-radius: 60px;
+  text-align: center;
+  padding: 14px;
+  color: white;
+  margin: 1rem 13rem;
+}
