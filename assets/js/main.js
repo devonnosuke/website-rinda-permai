@@ -221,7 +221,23 @@
     selector: ".carousel-item-b",
   });
 
-  lightGallery(document.getElementById("services"), {
+  lightGallery(document.getElementById("facility-1"), {
+    download: false,
+    selector: ".link-c",
+  });
+  lightGallery(document.getElementById("facility-2"), {
+    download: false,
+    selector: ".link-c",
+  });
+  lightGallery(document.getElementById("facility-3"), {
+    download: false,
+    selector: ".link-c",
+  });
+  lightGallery(document.getElementById("facility-4"), {
+    download: false,
+    selector: ".link-c",
+  });
+  lightGallery(document.getElementById("facility-5"), {
     download: false,
     selector: ".link-c",
   });

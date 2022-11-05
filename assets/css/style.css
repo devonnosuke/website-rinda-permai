@@ -19,6 +19,10 @@ body {
   margin-bottom: 2.5rem;
 } */
 
+.pic-facility {
+  /* display: hidden; */
+}
+
 .img-denah-dalam {
   margin: 0 auto;
   margin-top: -1rem;
@@ -64,6 +68,9 @@ body {
   .fasilitas-img {
     padding: 0px 190px;
   }
+  #countDown {
+    margin: 1rem 0;
+  }
 
   .img-denah-dalam {
     margin: 0 auto;
@@ -72,6 +79,12 @@ body {
     margin-left: 2rem;
     height: 85%;
     width: 86%;
+  }
+}
+
+@media (max-width: 320px) {
+  #countDown {
+    margin: 1rem 0 !important;
   }
 }
 
@@ -798,8 +811,8 @@ a:hover {
 
 .navbar-default.navbar-reduce {
   transition: all 0.5s ease-in-out;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .navbar-default.navbar-reduce .nav-link {
