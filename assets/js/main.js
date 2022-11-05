@@ -212,6 +212,9 @@
   lightGallery(document.getElementById("lightgallery"), {
     download: false,
   });
+  lightGallery(document.getElementById("lightgallery2"), {
+    download: false,
+  });
 
   lightGallery(document.getElementById("maplokasi"));
   lightGallery(document.getElementById("anim"));
