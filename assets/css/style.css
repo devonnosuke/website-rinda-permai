@@ -19,8 +19,27 @@ body {
   margin-bottom: 2.5rem;
 } */
 
+.fac {
+  background-color: rgba(0, 0, 0, 0);
+}
+.link-icon:active {
+  background-color: #ebdbb1 !important;
+}
+
 .pic-facility {
   /* display: hidden; */
+}
+
+.mosque {
+  text-align: center;
+}
+
+.title-mosque {
+  justify-content: center;
+}
+
+.swiper-slide img {
+  cursor: pointer;
 }
 
 .img-denah-dalam {
@@ -61,6 +80,20 @@ body {
 
   .text-brand img {
     width: 228px !important;
+  }
+
+  .mosque {
+    text-align: left;
+  }
+
+  .title-mosque {
+    justify-content: normal;
+  }
+
+  .col-md-6.facility,
+  .col-md-12.facility {
+    padding-top: 1.9rem;
+    padding-bottom: 1.9rem;
   }
 }
 

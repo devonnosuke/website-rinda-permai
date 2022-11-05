@@ -197,7 +197,6 @@
    */
   new Swiper("#property-single-carousel", {
     speed: 600,
-    loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
@@ -222,27 +221,134 @@
   lightGallery(document.getElementById("property-single-slider"), {
     download: false,
     selector: ".carousel-item-b",
+    animateThumb: true,
   });
 
-  lightGallery(document.getElementById("facility-1"), {
-    download: false,
-    selector: ".link-c",
+  document.getElementById("facility-1").addEventListener("click", function () {
+    lightGallery(document.getElementById("facility-1"), {
+      dynamic: true,
+      animateThumb: true,
+      thumbnail: true,
+      download: false,
+      dynamicEl: [
+        {
+          src: "assets/img/facility/jogging1.jpg",
+          thumb: "assets/img/facility/jogging1.jpg",
+        },
+        {
+          src: "assets/img/facility/jogging2.jpg",
+          thumb: "assets/img/facility/jogging2.jpg",
+        },
+        {
+          src: "assets/img/facility/jogging3.jpg",
+          thumb: "assets/img/facility/jogging3.jpg",
+        },
+      ],
+    });
   });
-  lightGallery(document.getElementById("facility-2"), {
-    download: false,
-    selector: ".link-c",
+
+  document.getElementById("facility-2").addEventListener("click", function () {
+    lightGallery(document.getElementById("facility-2"), {
+      dynamic: true,
+      animateThumb: true,
+      thumbnail: true,
+      download: false,
+      dynamicEl: [
+        {
+          src: "assets/img/facility/taman1.jpg",
+          thumb: "assets/img/facility/taman1.jpg",
+        },
+        {
+          src: "assets/img/facility/taman2.jpg",
+          thumb: "assets/img/facility/taman2.jpg",
+        },
+        {
+          src: "assets/img/facility/taman3.jpg",
+          thumb: "assets/img/facility/taman3.jpg",
+        },
+      ],
+    });
   });
-  lightGallery(document.getElementById("facility-3"), {
-    download: false,
-    selector: ".link-c",
+
+  document.getElementById("facility-3").addEventListener("click", function () {
+    lightGallery(document.getElementById("facility-3"), {
+      dynamic: true,
+      animateThumb: true,
+      thumbnail: true,
+      download: false,
+      dynamicEl: [
+        {
+          src: "assets/img/facility/communal.jpg",
+          thumb: "assets/img/facility/communal.jpg",
+        },
+        {
+          src: "assets/img/facility/communal2.jpg",
+          thumb: "assets/img/facility/communal2.jpg",
+        },
+        {
+          src: "assets/img/facility/communal3.jpg",
+          thumb: "assets/img/facility/communal3.jpg",
+        },
+      ],
+    });
   });
-  lightGallery(document.getElementById("facility-4"), {
-    download: false,
-    selector: ".link-c",
+
+  document.getElementById("facility-4").addEventListener("click", function () {
+    lightGallery(document.getElementById("facility-4"), {
+      dynamic: true,
+      animateThumb: true,
+      thumbnail: true,
+      download: false,
+      dynamicEl: [
+        {
+          src: "assets/img/facility/badminton1.jpg",
+          thumb: "assets/img/facility/badminton1.jpg",
+        },
+        {
+          src: "assets/img/facility/badminton2.jpg",
+          thumb: "assets/img/facility/badminton2.jpg",
+        },
+        {
+          src: "assets/img/facility/badminton3.jpg",
+          thumb: "assets/img/facility/badminton3.jpg",
+        },
+      ],
+    });
   });
-  lightGallery(document.getElementById("facility-5"), {
-    download: false,
-    selector: ".link-c",
+
+  document.getElementById("facility-5").addEventListener("click", function () {
+    lightGallery(document.getElementById("facility-5"), {
+      dynamic: true,
+      animateThumb: true,
+      thumbnail: true,
+      download: false,
+      dynamicEl: [
+        {
+          src: "assets/img/facility/masjid1.jpg",
+          thumb: "assets/img/facility/masjid1.jpg",
+        },
+        {
+          src: "assets/img/facility/masjid2.jpg",
+          thumb: "assets/img/facility/masjid2.jpg",
+        },
+        {
+          src: "assets/img/facility/masjid3.jpg",
+          thumb: "assets/img/facility/masjid3.jpg",
+        },
+        {
+          src: "assets/img/facility/masjid4.jpg",
+          thumb: "assets/img/facility/masjid4.jpg",
+        },
+        {
+          src: "assets/img/facility/masjid5.jpg",
+          thumb: "assets/img/facility/masjid5.jpg",
+        },
+        {
+          src: "assets/img/facility/masjid6.jpg",
+          thumb: "assets/img/facility/masjid6.jpg",
+        },
+      ],
+    });
   });
 
   let waktuSekarang = new Date().getTime() + 604801111;
