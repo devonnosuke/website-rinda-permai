@@ -19,15 +19,16 @@ body {
   margin-bottom: 2.5rem;
 } */
 
+.link-icon span {
+  font-size: 1.2rem !important;
+  vertical-align: inherit !important;
+}
+
 .fac {
   background-color: rgba(0, 0, 0, 0);
 }
 .link-icon:active {
   background-color: #ebdbb1 !important;
-}
-
-.pic-facility {
-  /* display: hidden; */
 }
 
 .mosque {
@@ -93,7 +94,15 @@ body {
   .col-md-6.facility,
   .col-md-12.facility {
     padding-top: 1.9rem;
-    padding-bottom: 1.9rem;
+  }
+
+  #countDown {
+    border-radius: 0 !important;
+  }
+
+  .navbar-default.navbar-trans .nav-link,
+  .navbar-default.navbar-reduce .nav-link {
+    color: #313131 !important;
   }
 }
 

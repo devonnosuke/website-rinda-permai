@@ -215,6 +215,10 @@
     download: false,
   });
 
+  lightGallery(document.getElementById("public-thumbnials"), {
+    download: false,
+  });
+
   lightGallery(document.getElementById("maplokasi"));
   lightGallery(document.getElementById("anim"));
 
