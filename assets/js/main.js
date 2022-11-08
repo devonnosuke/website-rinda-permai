@@ -121,7 +121,6 @@
    */
   new Swiper("#property-carousel", {
     speed: 600,
-    loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
