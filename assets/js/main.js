@@ -284,14 +284,6 @@
           src: "assets/img/facility/communal.jpg",
           thumb: "assets/img/facility/communal.jpg",
         },
-        {
-          src: "assets/img/facility/communal2.jpg",
-          thumb: "assets/img/facility/communal2.jpg",
-        },
-        {
-          src: "assets/img/facility/communal3.jpg",
-          thumb: "assets/img/facility/communal3.jpg",
-        },
       ],
     });
   });
