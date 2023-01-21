@@ -75,6 +75,10 @@ body {
 }
 
 @media (max-width: 600px) {
+  .dp {
+    font-size: 0.55rem;
+  }
+
   .title-c {
     font-size: 1.5rem !important;
   }
@@ -124,9 +128,16 @@ body {
   }
 }
 
+.dp {
+  font-size: 0.75rem;
+}
+
 @media (max-width: 320px) {
   #countDown {
     margin: 1rem 0 !important;
+  }
+  .dp {
+    font-size: 0.55rem;
   }
 }
 
