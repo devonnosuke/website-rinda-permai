@@ -218,6 +218,10 @@
     download: false,
   });
 
+  lightGallery(document.getElementById("siteplan"), {
+    download: false,
+  });
+
   lightGallery(document.getElementById("maplokasi"));
   lightGallery(document.getElementById("anim"));
 
