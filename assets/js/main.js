@@ -415,8 +415,8 @@
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="demo"
-    document.getElementById("countDown").innerHTML =
-      "Waktu Tersisa: " +
+    document.getElementById("countDown-s").innerHTML =
+      "PROMO TERBATAS HINGGA 1 SEPTEMBER!<br>SISA HARI: " +
       days +
       " Hari " +
       hours +
@@ -435,8 +435,8 @@
         "; expires=" +
         waktuCookie.toUTCString() +
         "; path=/";
-      document.getElementById("countDown").innerHTML =
-        "Waktu Tersisa: " +
+      document.getElementById("countDown-s").innerHTML =
+        "PROMO TERBATAS HINGGA 1 SEPTEMBER!<br>SISA HARI: " +
         days +
         " Hari " +
         hours +
